@@ -30,19 +30,19 @@ public class helloWorld {
 		}
 
 		if (x > 0 && y == 0) {
-			System.out.println(41);
+			System.out.println("Border line between 4 & 1");
 		}
 
 		if (x == 0 && y < 0) {
-			System.out.println(12);
+			System.out.println("Border line between 1 & 2");
 		}
 
 		if (x < 0 && y == 0) {
-			System.out.println(23);
+			System.out.println("Border line between 2 & 3");
 		}
 
 		if (x == 0 && y > 0) {
-			System.out.println(34);
+			System.out.println("Border line between 3 & 4");
 		}
 
 		if (x == 0 && y == 0) {
