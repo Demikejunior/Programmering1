@@ -12,7 +12,7 @@ public class Människa {
 		
 		System.out.println("Skriv hur många hela år du har existerat");
 		
-		int år = input.nextInt();
+		String år = input.nextLine();
 		
 		System.out.println("Skriv din adress");
 		
@@ -20,7 +20,7 @@ public class Människa {
 		
 		System.out.println("Skriv ditt postnummer");
 		
-		int post = input.nextInt();
+		String post = input.nextLine();
 		
 		System.out.println("Skriv vilken stad du bor i");
 		
@@ -28,8 +28,18 @@ public class Människa {
 		
 		System.out.println("Skriv ditt telefonnummer");
 		
-		int telefon = input.nextInt();
+		String telefon = input.nextLine();
 		
+		
+		System.out.println("Information:");
+		
+		System.out.println("Namn:    " + namn);
+		
+		System.out.println("Ålder:   " + år + " år");
+		
+		System.out.println("Adress:  " + adress + "\n         " + post + " " + stad);
+		
+		System.out.println("Telefon: " + telefon);
 		
 		
 		input.close();
