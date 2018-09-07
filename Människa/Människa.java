@@ -10,6 +10,10 @@ public class Människa {
 		
 		String namn = input.nextLine();
 		
+		System.out.println("Skriv hur många hela år du har existerat");
+		
+		int år = input.nextInt();
+		
 		
 		
 		
