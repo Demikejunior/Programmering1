@@ -14,6 +14,21 @@ public class Människa {
 		
 		int år = input.nextInt();
 		
+		System.out.println("Skriv din adress");
+		
+		String adress = input.nextLine();
+		
+		System.out.println("Skriv ditt postnummer");
+		
+		int post = input.nextInt();
+		
+		System.out.println("Skriv vilken stad du bor i");
+		
+		String stad = input.nextLine();
+		
+		System.out.println("Skriv ditt telefonnummer");
+		
+		int telefon = input.nextInt();
 		
 		
 		
