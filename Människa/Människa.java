@@ -6,6 +6,14 @@ public class Människa {
 		
 		Scanner input = new Scanner(System.in);
 		
+		System.out.println("Skriv ditt för- & efternamn");
+		
+		String namn = input.nextLine();
+		
+		
+		
+		
+		input.close();
 	}
 	
 }
