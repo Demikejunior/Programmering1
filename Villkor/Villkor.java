@@ -99,7 +99,7 @@ public class Villkor {
 		
 		
 
-		int medel = (tal0 + tal1 + tal2 + tal3 + tal4 + tal5 + tal6 + tal7 + tal8 + tal9)/10;
+		double medel = (tal0 + tal1 + tal2 + tal3 + tal4 + tal5 + tal6 + tal7 + tal8 + tal9)/10;
 		
 		System.out.println(max + " är störst.");
 		
