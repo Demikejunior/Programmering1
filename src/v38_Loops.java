@@ -87,9 +87,25 @@ public class v38_Loops {
 				exit = true;
 			}
 			
-			
 		}
 		System.out.println("\rFärdig med Inlämning 6");
+		
+		
+		//Inlämning 7
+		
+		for (int i = 0; i < 4; i++) {
+			
+			for (int j = 0 ; j <= i ; j++) {
+				
+				System.out.print("x");
+			
+			}
+			System.out.println("");
+			
+		}
+		System.out.println("\rFärdig med Inlämning 7");
+		
+		
 		
 
 		input.close();
