@@ -128,6 +128,21 @@ public class v38_Loops {
 		System.out.println("\r" + fac);
 		System.out.println("\rFärdig med Inlämning 9");
 		
+		
+		//Inlämning fibonacci
+		
+		System.out.println("Skriv ett nummer");
+		in = input.nextInt();
+		int fib1 = 0;
+		int fib2 = 1;
+		int fib3 = 1;
+		for (int i = 1; i <= in; i++) {
+			System.out.print(fib1 + " " + fib2 + " " + fib3 + " ");
+			fib1 = fib2 + fib3;
+			fib2 = fib3 + fib1;
+			fib3 = fib1+ fib2;
+		}
+		System.out.print(fib1 + " " + fib2 + " " + fib3 + " ");
 
 		input.close();
 
