@@ -4,6 +4,8 @@ public class v38_Loops {
 
 	public static void main(String[] args) {
 		
+		Scanner input = new Scanner(System.in);
+		
 		
 		//Inlämning 1
 		
@@ -37,7 +39,6 @@ public class v38_Loops {
 		
 		//Inlämning 4
 
-		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Skriv ett heltal mellan 0 och 10");
 		
@@ -113,6 +114,19 @@ public class v38_Loops {
 		}
 		System.out.println("\rFärdig med Inlämning 8");
 		
+		
+		//Inläming 9
+		
+		System.out.println("Fakultet");
+		
+		int fac = 1;
+		int in = input.nextInt();
+		for (int i = in; i >= 1; i--) {
+			fac = fac * i;
+			System.out.print(fac + " * " + i + " => ");
+		}
+		System.out.println("\r" + fac);
+		System.out.println("\rFärdig med Inlämning 9");
 		
 
 		input.close();
