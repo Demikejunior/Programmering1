@@ -105,6 +105,13 @@ public class v38_Loops {
 		}
 		System.out.println("\rFärdig med Inlämning 7");
 		
+
+		//Inlämning 8
+		
+		for (int i = 100; i <= 1000; i += 2) {
+			System.out.println(i);
+		}
+		System.out.println("\rFärdig med Inlämning 8");
 		
 		
 
