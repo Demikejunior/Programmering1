@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class v38_Loops {
 
@@ -13,10 +14,26 @@ public class v38_Loops {
 			System.out.println(i);
 
 		}
-		
+
 		for (int i = 20; i >= 0; i--) {
+			
 			System.out.println(i);
+			
 		}
+
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Skriv ett heltal mellan 0 och 10");
+		
+		byte var = input.nextByte();
+		
+		for (int i = 0; i <= 10; i++) {
+			
+			System.out.print(i*var + " ");
+			
+		}
+
+		input.close();
 
 	}
 
