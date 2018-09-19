@@ -14,7 +14,7 @@ public class v38_Loops {
 
 		}
 		
-		for (int i = 20; i >= Integer.MIN_VALUE; i--) {
+		for (int i = 20; i >= 0; i--) {
 			System.out.println(i);
 		}
 
