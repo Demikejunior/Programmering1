@@ -9,12 +9,15 @@ public class v38_Loops {
 		System.out.println(sum);
 
 		for (int i = 25; i <= 50; i++) {
-			
+
 			System.out.println(i);
-			
+
 		}
 		
-		
+		for (int i = 20; i >= Integer.MIN_VALUE; i--) {
+			System.out.println(i);
+		}
+
 	}
-	
+
 }
