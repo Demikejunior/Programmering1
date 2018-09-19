@@ -12,6 +12,7 @@ public class v38_Loops {
 			sum = sum + i;
 		}
 		System.out.println(sum);
+		System.out.println("\rFärdig med Inlämning 1");
 		
 		
 		//Inlämning 2
@@ -21,6 +22,7 @@ public class v38_Loops {
 			System.out.println(i);
 
 		}
+		System.out.println("\rFärdig med Inlämning 2");
 		
 		
 		//Inlämning 3
@@ -30,6 +32,7 @@ public class v38_Loops {
 			System.out.println(i);
 			
 		}
+		System.out.println("\rFärdig med Inlämning 3");
 		
 		
 		//Inlämning 4
@@ -45,13 +48,14 @@ public class v38_Loops {
 			System.out.print(i*var + " ");
 			
 		}
+		System.out.println("\rFärdig med Inlämning 4");
 		
 		
 		//Inlämning 5
 		
 		boolean exit = false;
 		
-		System.out.println("\n\rSkriv in nummer");
+		System.out.println("\rSkriv in nummer");
 		
 		sum = 0;
 		
@@ -66,7 +70,26 @@ public class v38_Loops {
 			
 		}
 		System.out.println(sum);
+		System.out.println("\rFärdig med Inlämning 5");
 		
+		
+		//Inlämning 6
+		
+		exit = false;
+		
+		System.out.println("\rSkriv in ord");
+		
+		
+		while (!exit) {
+			String line = input.nextLine();
+			
+			if (line.equals("exit")) {
+				exit = true;
+			}
+			
+			
+		}
+		System.out.println("\rFärdig med Inlämning 6");
 		
 
 		input.close();
