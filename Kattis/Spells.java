@@ -1,16 +1,15 @@
 import java.util.Scanner;
 
-public class twoStones {
+public class Spells {
 	
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
 		
 		int var = input.nextInt();
-		if (var % 2 == 0) {
-			System.out.println("Bob");
-		} else {
-			System.out.println("Alice");
+		
+		for (int i = 1; i <= var; i++) {
+			System.out.println(i + " Abracadabra");
 		}
 		
 		input.close();
