@@ -1,3 +1,4 @@
+package divUppgifter;
 import java.util.Scanner;
 
 public class v38_Loops {

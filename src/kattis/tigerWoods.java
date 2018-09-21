@@ -1,3 +1,4 @@
+package kattis;
 
 public class tigerWoods {
 

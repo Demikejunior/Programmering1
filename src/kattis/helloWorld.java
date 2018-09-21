@@ -1,3 +1,4 @@
+package kattis;
 import java.util.Scanner;
 
 public class helloWorld {
