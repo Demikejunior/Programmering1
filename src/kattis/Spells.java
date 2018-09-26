@@ -8,12 +8,12 @@ public class Spells {
 		Scanner input = new Scanner(System.in);
 		
 		int var = input.nextInt();
-
+		
 		input.close();
 		
 		for (int i = 1; i <= var; i++) {
 			System.out.println(i + " Abracadabra");
-		}
+		}	
 		
 	}
 	
