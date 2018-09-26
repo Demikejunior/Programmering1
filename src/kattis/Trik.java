@@ -1,6 +1,5 @@
 package kattis;
 
-import java.sql.Array;
 import java.util.Scanner;
 
 public class Trik {
@@ -16,6 +15,8 @@ public class Trik {
 		
 		String str = input.nextLine().toUpperCase();
 		
+		input.close();
+		
 		move = str.toCharArray();
 		
 		
@@ -23,33 +24,29 @@ public class Trik {
 			if (move[i] == 'A'){
 				if(ballPos == 0) {
 					ballPos = 1;
-				}
-				if(ballPos == 1) {
+				} else if(ballPos == 1) {
 					ballPos = 0;
 				}
 			}
 			if (move[i] == 'B'){
 				if(ballPos == 1) {
 					ballPos = 2;
-				}
-				if(ballPos == 2) {
+				} else if(ballPos == 2) {
 					ballPos = 1;
 				}
 			}
 			if (move[i] == 'C'){
 				if(ballPos == 0) {
 					ballPos = 2;
-				}
-				if(ballPos == 2) {
+				} else if(ballPos == 2) {
 					ballPos = 0;
 				}
 			}
 			
 			
 		}
-		System.out.println(ballPos);
+		System.out.println(ballPos+1);
 		
-		input.close();
 		
 	}
 	
