@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class Modulo {
 
 	public static void main(String[] args) {
-
+		
 		int var = 0;
-
+		
 		Scanner input = new Scanner(System.in);
-
+		
 		int[] arr = new int[42];
-
+		
 		for (int i = 0; i < 10; i++) {
 			int num = input.nextInt() % 42;
 			arr[num]++;
@@ -25,7 +25,7 @@ public class Modulo {
 				var++;
 			}
 		}
-
+		
 		System.out.println(var);
 
 
