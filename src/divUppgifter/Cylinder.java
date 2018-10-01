@@ -16,6 +16,8 @@ public class Cylinder {
 		
 		System.out.println("Cylinderns area är: " + area * height);
 		
+		input.close();
+		
 	}
 	
 }
