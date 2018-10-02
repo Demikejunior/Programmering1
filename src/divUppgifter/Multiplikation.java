@@ -14,7 +14,7 @@ public class Multiplikation {
 		
 		while (!exit) {
 			
-			if (var >= 10000 || count >= 10) {
+			if (var >= 100000 || count >= 10) {
 				exit = true;
 			} else {
 			
