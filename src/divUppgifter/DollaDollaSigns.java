@@ -25,9 +25,10 @@ public class DollaDollaSigns {
 			System.out.println();
 
 		}
-
-		for (int i = 0; i < dolla; i++) {
-			System.out.print("$");
+		if (dolla != 1) {
+			for (int i = 0; i < dolla; i++) {
+				System.out.print("$");
+			}
 		}
 
 	}

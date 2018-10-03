@@ -1,4 +1,5 @@
 package kattis;
+
 import java.util.Scanner;
 
 public class helloWorld {
@@ -12,7 +13,7 @@ public class helloWorld {
 		int x = input.nextInt();
 		int y = input.nextInt();
 
-		input.close(); //END Scanner
+		input.close(); // END Scanner
 
 		if (x > 0 && y > 0) {
 			System.out.println(1);
@@ -30,7 +31,6 @@ public class helloWorld {
 			System.out.println(4);
 		}
 
-		
 		if (x > 0 && y == 0) {
 			System.out.println("Border line between 4 & 1");
 		}
