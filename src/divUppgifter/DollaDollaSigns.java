@@ -29,6 +29,7 @@ public class DollaDollaSigns {
 			for (int i = 0; i < dolla; i++) {
 				System.out.print("$");
 			}
+
 		}
 
 	}
