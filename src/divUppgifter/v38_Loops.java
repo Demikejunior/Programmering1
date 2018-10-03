@@ -134,11 +134,11 @@ public class v38_Loops {
 		
 		System.out.println("Fakultet");
 		
-		int fac = 1;
 		int in = input.nextInt();
+		int fac = in;
 		for (int i = in; i >= 1; i--) {
-			fac = fac * i;
 			System.out.print(fac + " * " + i + " => ");
+			fac = fac * i;
 		}
 		System.out.println("\r" + fac);
 		System.out.println("\rFärdig med Inlämning 9\r");
