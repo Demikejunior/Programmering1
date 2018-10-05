@@ -1,13 +1,12 @@
 package kattis;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Everywhere {
 
 	public static void main(String[] args) {
 
-		Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in); // skap
 
 		int test = input.nextInt();
 
@@ -15,31 +14,23 @@ public class Everywhere {
 
 			int var = input.nextInt();
 
+			System.out.println(input.nextLine());
+
 			int res = 0;
 
-			String[] arr = new String[var];
+			String[] arr = new String[var-1];
 
 			for (int j = 0; j <= var; j++) {
 
 				String coke = input.nextLine();
 
-				if (Arrays.asList(arr).contains(coke)) {
-					for (int k = 0; k < var; k++) {
-						if (arr[k] == null) {
-							arr[k] = coke;
-							res++;
-						}
+				for (int k = 0; k < var; k++) {
 
-					}
-
-				} else {
-
-					for (int k = 0; k < var; k++) {
-						if (arr[k] == null) {
-							arr[k] = coke;
-							res++;
-						}
-
+					if (arr[k].equals(null)) {
+						arr[k] = coke;
+						res++;
+						System.out.println(coke);
+						
 					}
 
 				}
