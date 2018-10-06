@@ -6,7 +6,7 @@ public class Everywhere {
 
 	public static void main(String[] args) {
 
-		Scanner input = new Scanner(System.in); // skap
+		Scanner input = new Scanner(System.in);
 
 		int test = input.nextInt();
 
@@ -14,23 +14,28 @@ public class Everywhere {
 
 			int var = input.nextInt();
 
-			System.out.println(input.nextLine());
+			String trash = input.nextLine();
 
 			int res = 0;
 
-			String[] arr = new String[var-1];
+			String[] arr = new String[var];
 
-			for (int j = 0; j <= var; j++) {
+			for (int j = 0; j < var; j++) {
 
 				String coke = input.nextLine();
 
-				for (int k = 0; k < var; k++) {
+				for (int index = 0; index < var; index++) {
 
-					if (arr[k].equals(null)) {
-						arr[k] = coke;
-						res++;
-						System.out.println(coke);
-						
+					if (index != var + 1) {
+						try {
+							if (arr[index].equals(coke)) {
+								break;
+							}
+						} catch (NullPointerException e) {
+							arr[index] = coke;
+							res++;
+							break;
+						}
 					}
 
 				}
