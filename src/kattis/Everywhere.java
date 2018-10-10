@@ -43,7 +43,8 @@ public class Everywhere {
 			}
 
 			System.out.println(res);
-
+			System.out.println(trash);
+			
 		}
 
 		input.close();
