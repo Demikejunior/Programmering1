@@ -57,6 +57,7 @@ public class Methods_v2 {
 					break;
 				} else if(arr[i] == 'X'){
 					sol = sol + "Koksos";
+					break;
 				} else if (j == cons.length - 1) {
 					sol = sol + arr[i];
 				}
