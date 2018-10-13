@@ -2,7 +2,7 @@ package divUppgifter;
 
 public class Methods_v2 {
 	public static void main(String[] args) {
-
+		
 	}
 
 	public static double volume(double radius) {
@@ -33,16 +33,39 @@ public class Methods_v2 {
 
 	public static String sjorovare(String str) {
 		int l = str.length();
-		String s = "";
-		int a = 0;
+		
+		char[] arr = str.toCharArray();
+		String consS = "bcdfghjklmnpqrstvwz";
+		char[] cons = consS.toCharArray();
+		char[] Cons = consS.toUpperCase().toCharArray();
+		
+		String sol = "";
 		for (int i = 0; i < l; i++) {
-			if (str.toUpperCase().charAt(i) == ('B' | 'C' | 'D' | 'F' | 'G' | 'H' | 'J' | 'K' | 'L' | 'M' | 'N' | 'P' | 'Q' | 'R' | 'S' | 'T' | 'V' | 'Z')) {
-				if ()
+			
+			for (int j = 0; j < cons.length; j++) {
+					
+				if (arr[i] == cons[j]) {
+					String del = cons[j] + "o" + cons[j];
+					sol = sol + del;
+					break;
+				} else if (arr[i] == Cons[j]) {
+					String del = Cons[j] + "o" + cons[j];
+					sol = sol + del;
+					break;
+				} else if (arr[i] == 'x') {
+					sol = sol + "koksos";
+					break;
+				} else if(arr[i] == 'X'){
+					sol = sol + "Koksos";
+				} else if (j == cons.length - 1) {
+					sol = sol + arr[i];
+				}
+				
 			}
 		
 		}
 		
-		return s;
+		return sol;
 		
 	}
 
