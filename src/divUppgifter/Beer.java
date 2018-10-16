@@ -13,7 +13,9 @@ public class Beer {
 				System.out.println(i + " bottles of beer on the wall, " + i
 						+ " bottles of beer. \r\nTake one down, pass it around,  " + (i - 1)
 						+ " bottles of beer on the wall.");
-				drink(in);
+				if (drink(in) == true) {
+					break;
+				}
 			}
 			System.out.println(
 					"1 bottle of beer on the wall, 1 bottle of beer. \r\nTake one down and pass it around, no more bottles of beer on the wall.");
@@ -42,16 +44,22 @@ public class Beer {
 
 	}
 
-	public static void drink(Scanner in) {
+	public static boolean drink(Scanner in) {
 		boolean var = false;
+		boolean x = false;
 		while (!var) {
 			var = false;
 			String d = in.nextLine();
 			if (d.toLowerCase().equals("drink")) {
 				var = true;
+			} else if (d.toLowerCase().equals("skip")) {
+				var = true;
+				x = true;
 			}
-
+			
 		}
+		
+		return x;
 
 	}
 
