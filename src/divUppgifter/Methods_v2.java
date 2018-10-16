@@ -31,43 +31,69 @@ public class Methods_v2 {
 		return t;
 	}
 
-	public static String sjorovare(String str) {
-		int l = str.length();
-		
-		char[] arr = str.toCharArray();
-		String consS = "bcdfghjklmnpqrstvwz";
-		char[] cons = consS.toCharArray();
-		char[] Cons = consS.toUpperCase().toCharArray();
-		
-		String sol = "";
-		for (int i = 0; i < l; i++) {
-			
-			for (int j = 0; j < cons.length; j++) {
-					
-				if (arr[i] == cons[j]) {
-					String del = cons[j] + "o" + cons[j];
-					sol = sol + del;
-					break;
-				} else if (arr[i] == Cons[j]) {
-					String del = Cons[j] + "o" + cons[j];
-					sol = sol + del;
-					break;
-				} else if (arr[i] == 'x') {
-					sol = sol + "koksos";
-					break;
-				} else if(arr[i] == 'X'){
-					sol = sol + "Koksos";
-					break;
-				} else if (j == cons.length - 1) {
-					sol = sol + arr[i];
+	public static String sjorovare(String str) {			// Rövarspråk metod
+
+		int length = str.length();							// Längden av input String
+
+		char[] arr = str.toCharArray();						// Skapar en character array av input String
+
+		String consS = "bcdfghjklmnpqrstvwz";				// Skapar en String av alla konsonanter
+
+		char[] cons = consS.toCharArray();					// Skapar en character array av alla små konsonanter
+
+		char[] Cons = consS.toUpperCase().toCharArray();	// Skapar en character array av alla stora konsonanter
+
+		String sol = "";									// Skapar en tom String för att senare lägga till delar, sedan returna den
+
+		for (int i = 0; i < length; i++) {					// Loopa length antal gånger
+
+			for (int j = 0; j < cons.length; j++) { 		// Loopa lika många gånger som det finns konsonanter, här ska man då
+															// jämföra karaktären vid i med alla konsonanter, både stora, och
+															// små
+
+				if (arr[i] == cons[j]) {					// Om det är en liten konsonant, då gör detta
+
+					String del = cons[j] + "o" + cons[j];	// först skapa en delString som är den tidigare konsonanten
+															// två gånger med ett o i mitten
+
+					sol = sol + del;						// Sedan lägg till delStringen till sol
+
+					break;									// Sluta jämföra karaktärer vid i
+
+				} else if (arr[i] == Cons[j]) {				// Om det är en stor konsonant då gör detta
+
+					String del = Cons[j] + "o" + cons[j];	// Först skapa en delString som är den konsonanten (stor), ett
+															// o, sedan samma konsonant, fast liten
+
+					sol = sol + del;						// Sedan lägg till delStringen till sol
+
+					break;									// Sluta jämföra karaktärer vid i
+
+				} else if (arr[i] == 'x') {					// Om det är ett litet x
+
+					sol = sol + "koksos";					// Lägg till koksos till sol
+
+					break;									// Sluta jämföra karaktärer vid i
+
+				} else if (arr[i] == 'X') {					// Om det är ett stort x
+
+					sol = sol + "Koksos";					// Lägg till Koksos till sol
+
+					break;									// Sluta jämföra karaktärer vid i
+
+				} else if (j == cons.length - 1) {			// Om man har gått igenom loopen helt, utan att den har blivit
+															// jämförd med något av de tidigare if-statements, då gör detta
+
+					sol = sol + arr[i];						// Lägg till tecknet till sol
+
 				}
-				
+
 			}
-		
+
 		}
-		
-		return sol;
-		
+
+		return sol;											// returna sol
+
 	}
 
 }
