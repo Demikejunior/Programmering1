@@ -47,14 +47,11 @@ public class Methods_v2 {
 
 		for (int i = 0; i < length; i++) { // Loopa length antal gånger
 
-			for (int j = 0; j < cons.length; j++) { // Loopa lika många gånger som det finns konsonanter, här ska man då
-													// jämföra karaktären vid i med alla konsonanter, både stora, och
-													// små
+			for (int j = 0; j < cons.length; j++) { // Loopa lika många gånger som det finns konsonanter, här ska man då jämföra karaktären vid i med alla konsonanter, både stora, och små
 
 				if (arr[i] == cons[j]) { // Om det är en liten konsonant, då gör detta
 
-					String del = cons[j] + "o" + cons[j]; // först skapa en delString som är den tidigare konsonanten
-															// två gånger med ett o i mitten
+					String del = cons[j] + "o" + cons[j]; // först skapa en delString som är den tidigare konsonanten två gånger med ett o i mitten
 
 					sol = sol + del; // Sedan lägg till delStringen till sol
 
@@ -62,8 +59,7 @@ public class Methods_v2 {
 
 				} else if (arr[i] == Cons[j]) { // Om det är en stor konsonant då gör detta
 
-					String del = Cons[j] + "o" + cons[j]; // Först skapa en delString som är den konsonanten (stor), ett
-															// o, sedan samma konsonant, fast liten
+					String del = Cons[j] + "o" + cons[j]; // Först skapa en delString som är den konsonanten (stor), ett o, sedan samma konsonant, fast liten
 
 					sol = sol + del; // Sedan lägg till delStringen till sol
 
@@ -81,8 +77,7 @@ public class Methods_v2 {
 
 					break; // Sluta jämföra karaktärer vid i
 
-				} else if (j == cons.length - 1) { // Om man har gått igenom loopen helt, utan att den har blivit
-													// jämförd med något av de tidigare if-statements, då gör detta
+				} else if (j == cons.length - 1) { // Om man har gått igenom loopen helt, utan att den har blivit jämförd med något av de tidigare if-statements, då gör detta
 
 					sol = sol + arr[i]; // Lägg till tecknet till sol
 
@@ -104,18 +99,11 @@ public class Methods_v2 {
 
 		for (int i = 0; i < str.length(); i++) { // Loopa så många gånger som det finns karaktärer i str
 
-			for (int j = 0; j < cons.length(); j++) { // Loopa lika många gånger som det finns konsonanter, här ska man
-														// då jämföra karaktären vid i med alla konsonanter, både stora,
-														// och små
+			for (int j = 0; j < cons.length(); j++) { // Loopa lika många gånger som det finns konsonanter, här ska man då jämföra karaktären vid i med alla konsonanter, både stora, och små
 
-				if (str.charAt(i) == cons.charAt(j) || str.charAt(i) == cons.toUpperCase().charAt(j)) { // Om det är en
-																										// liten
-																										// konsonant, då
-																										// gör detta
+				if (str.charAt(i) == cons.charAt(j) || str.charAt(i) == cons.toUpperCase().charAt(j)) { // Om det är en liten konsonant, då gör detta
 
-					String del = str.charAt(i) + "o" + str.toLowerCase().charAt(i); // först skapa en delString som är
-																					// den tidigare konsonanten
-																					// två gånger med ett o i mitten
+					String del = str.charAt(i) + "o" + str.toLowerCase().charAt(i); // först skapa en delString som är den tidigare konsonanten två gånger med ett o i mitten
 
 					sol = sol + del; // Sedan lägg till delStringen till sol
 
@@ -133,8 +121,7 @@ public class Methods_v2 {
 
 					break; // Sluta jämföra karaktärer vid i
 
-				} else if (j == cons.length() - 1) { // Om man har gått igenom loopen helt, utan att den har blivit
-														// jämförd med något av de tidigare if-statements, då gör detta
+				} else if (j == cons.length() - 1) { // Om man har gått igenom loopen helt, utan att den har blivit jämförd med något av de tidigare if-statements, då gör detta
 
 					sol = sol + str.charAt(i); // Lägg till tecknet till sol
 
