@@ -9,16 +9,14 @@ public class Ylvis {
 		Scanner sc = new Scanner(System.in);
 		
 		int repet = sc.nextInt();
-		
+		String trash = sc.nextLine();
 		for (int i = 0; i < repet; i++) {
 			
 			String[] noise = sc.nextLine().split(" ");
 			
-			noise = sc.nextLine().split(" ");
-			
 			String[] absolve = new String[noise.length];
 			
-			for (int j = 0; j < absolve.length; j++) {
+			for (int j = 0; j < noise.length; j++) {
 				
 				String[] blue = sc.nextLine().split(" ");
 				
