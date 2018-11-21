@@ -8,32 +8,52 @@ public class Ylvis {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		for (int i = 0; i < sc.nextInt(); i++) {
-			String solve = null;
+		int repet = sc.nextInt();
+		
+		for (int i = 0; i < repet; i++) {
+			
 			String[] noise = sc.nextLine().split(" ");
+			
+			noise = sc.nextLine().split(" ");
+			
 			String[] absolve = new String[noise.length];
-			boolean exit = false;
-			int j = 0;
-			while(!exit) {
+			
+			for (int j = 0; j < absolve.length; j++) {
+				
 				String[] blue = sc.nextLine().split(" ");
+				
 				if (blue.length == 5) {
-					exit = true;
+					break;
 				} else {
-					absolve[j] = blue[2];
-				}
+					absolve[j] = blue[blue.length - 1];
+				} 
+				
 			}
+			String solve = "";
+			
 			for (int k = 0; k < noise.length; k++) {
+				
 				for (int l = 0; l < noise.length; l++) {
-					if (!noise[k].equals(absolve[l])) {
-						solve += noise[k];
+					
+					if (noise[k].equals(absolve[l])) {
+						noise[k] = "";
 					}
+					
 				}
+				
+			}
+			
+			for (int l = 0; l < noise.length; l++) {
+				
+				if (!noise[l].equals("")) {
+					solve += noise[l] + " ";
+				}
+				
 			}
 			
 			System.out.println(solve);
 			
 		}
-		
 		
 		sc.close();
 		
