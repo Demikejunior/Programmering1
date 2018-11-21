@@ -9,7 +9,7 @@ public class Ylvis {
 		Scanner sc = new Scanner(System.in);
 		
 		int repet = sc.nextInt();
-		String trash = sc.nextLine();
+		String solve = sc.nextLine();
 		for (int i = 0; i < repet; i++) {
 			
 			String[] noise = sc.nextLine().split(" ");
@@ -27,7 +27,7 @@ public class Ylvis {
 				} 
 				
 			}
-			String solve = "";
+			solve = "";
 			
 			for (int k = 0; k < noise.length; k++) {
 				
