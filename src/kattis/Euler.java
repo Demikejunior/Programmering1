@@ -12,8 +12,7 @@ public class Euler {
 		double sum = 0;
 		
 		for (int i = 0; i <= n; i++) {
-			double temp = factorial(i);
-			sum += 1/temp;
+			sum += 1/factorial(i);
 		}
 		
 		System.out.println(sum);
@@ -21,7 +20,7 @@ public class Euler {
 	}
 	
 	private static double factorial(int f) {
-		int var = 1;
+		double var = 1;
 		for (int i = f; i > 0; i--) {
 			var = var * i;
 		}
