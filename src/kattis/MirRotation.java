@@ -14,6 +14,9 @@ public class MirRotation {
 			if (var == 0) {
 				break;
 			}
+			char[] rot = sc.nextLine().toCharArray();
+			
+			String end = new String(rot);
 			
 		}
 		sc.close();
