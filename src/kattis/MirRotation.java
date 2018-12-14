@@ -14,9 +14,28 @@ public class MirRotation {
 			if (var == 0) {
 				break;
 			}
-			char[] rot = sc.nextLine().toCharArray();
+			String str = sc.nextLine().toUpperCase();
+			str = str.replaceAll(" ", "");
+			char[] rot = str.toCharArray();
 			
+			for (int i = 0; i < (rot.length / 2); i++) {
+				char temp = rot[i];
+				rot[i] = rot[rot.length - (i + 1)];
+				rot[rot.length - (i + 1)] = temp;
+			}
+			
+			for (int i = 0; i < rot.length; i++) {
+				for (int j = 0; j < alpha.length; j++) {
+					if (rot[i] == alpha[j]) {
+						
+						rot[i] = alpha[(j+var) % 28];
+						
+						break;
+					}
+				} 
+			}
 			String end = new String(rot);
+			System.out.println(end);
 			
 		}
 		sc.close();
