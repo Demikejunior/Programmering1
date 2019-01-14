@@ -11,11 +11,11 @@ public class Tree {
 		char[] path = sc.nextLine().toUpperCase().toCharArray();
 		double tot = Math.pow(2, height + 1) - 1;
 		
-		for (int i = 0; i < path.length; i++) {
+		for (int i = 1; i < path.length; i++) {
 			 if (path[i] == 'R') {
 				tot = tot - (Math.pow(2, i));
 			} else if (path[i] == 'L') {
-				tot = tot - (Math.pow(2, i) - 1);
+				tot = tot - (Math.pow(2, i));
 			}
 			 System.out.println(tot);
 		}
