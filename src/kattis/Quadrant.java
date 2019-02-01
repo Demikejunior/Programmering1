@@ -2,7 +2,7 @@ package kattis;
 
 import java.util.Scanner;
 
-public class helloWorld {
+public class Quadrant {
 
 	public static void main(String[] args) {
 

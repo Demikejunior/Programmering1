@@ -1,7 +1,7 @@
 package kattis;
 import java.util.Scanner;
 
-public class twoStones {
+public class TwoStones {
 	
 	public static void main(String[] args) {
 		
