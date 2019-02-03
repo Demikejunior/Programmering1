@@ -11,17 +11,21 @@ public class Recursion {
 
 		Scanner sc = new Scanner(System.in);
 
-//		System.out.println(reverse(sc.nextLine()));
+		System.out.println(reverse(sc.nextLine()));
 
-//		System.out.println(sum(sc.nextInt()));
+		System.out.println(sum(sc.nextInt()));
 
-//		System.out.println(fib(sc.nextInt()));
+		System.out.println(fib(sc.nextInt()));
+		
+		hmap.clear();
 		
 		System.out.println(fibHash(sc.nextInt()));
 
-//		System.out.println(fac(sc.nextInt()));
+		System.out.println(fac(sc.nextInt()));
+		
+		hmap.clear();
 
-//		System.out.println(facHash(sc.nextInt()));
+		System.out.println(facHash(sc.nextInt()));
 
 		sc.close();
 
