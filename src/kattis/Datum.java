@@ -2,7 +2,7 @@ package kattis;
 
 import java.util.Scanner;
 
-public class datum {
+public class Datum {
 
 	public static void main(String[] args) {
 
